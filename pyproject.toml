@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "app-config-exporter"
+version = "0.0.1"
+description = ""
+authors = ["Vitaliy Krasnov <krasnov.v.i@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+exclude = [".venv", "./app/alembic", "./tasks"]
+select = ["ALL"]
